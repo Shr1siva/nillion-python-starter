@@ -5,8 +5,9 @@ def nada_main():
     my_int1 = SecretInteger(Input(name="my_int1", party=party1))
     my_int2 = SecretInteger(Input(name="my_int2", party=party1))
 
-    # Compute the sum of my_int1 and my_int2
-    result = my_int1 + my_int2
+    # Compute the product of my_int1 and my_int2, then add 10
+    result = (my_int1 * my_int2) + 10
 
     # Return the result as the output
-    return [Output(result, "sum_output", party=party1)]
+    return [Output(result, "product_plus_ten_output", party=party1)]
+
